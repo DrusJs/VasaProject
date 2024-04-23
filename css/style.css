@@ -793,6 +793,9 @@ a {
     }
     .main__title {
         font-size: 48px;
+    }    
+    .title {
+        font-size: 40px;
     }
     .main__screen_inner {
         margin-left: 0;
@@ -801,10 +804,6 @@ a {
     .main__title_h1.main__screen_title {
         font-size: 48px;
         text-indent: 0px;
-    }
-    
-    .title {
-        font-size: 40px;
     }
     .burger-button {
         display: block;
@@ -875,7 +874,13 @@ a {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) {    
+    .main__title {
+        font-size: 36px;
+    }    
+    .title {
+        font-size: 30px;
+    }
     .main__buttons button {
         width: 100%;
     }
@@ -890,5 +895,8 @@ a {
     }    
     .steps__items {
         grid-template-columns: 1fr;
-    } 
+    }
+    .swiper__title.text__center {
+        text-align: left;
+    }
 }
