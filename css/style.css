@@ -47,6 +47,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -55,6 +59,10 @@ input::-webkit-inner-spin-button {
 
 body {
     background-color: #F5F5F5;
+}
+
+body.scroll-hidden {
+    overflow: hidden;
 }
 
 a {
@@ -802,6 +810,11 @@ a {
         display: block;
         margin-left: auto;
         z-index: 10;
+    }
+    .burger-button.active {
+        position: fixed;
+        top: 44px;
+        right: 15px;
     }
     .burger-button svg:last-child {
         display: none;

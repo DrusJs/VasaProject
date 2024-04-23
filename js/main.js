@@ -30,5 +30,16 @@ if (document.querySelector('.burger-button')) {
     document.querySelector('.burger-button').addEventListener('click', (e) => {
         document.querySelector('.nav').classList.toggle('active')
         e.currentTarget.classList.toggle('active')
+        document.body.classList.toggle('scroll-hidden')
+    })
+}
+
+if (document.querySelector('.header__link')) {
+    document.querySelectorAll('.header__link').forEach((link) => {
+        link.addEventListener('click', () => {
+            document.querySelector('.burger-button').classList.remove('active')
+            document.querySelector('.nav').classList.remove('active')
+            document.body.classList.remove('scroll-hidden')
+        })
     })
 }
