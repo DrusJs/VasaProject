@@ -516,6 +516,9 @@ body.dark-theme .scroll__card {
     flex-direction: column;
     gap: 10px;
 }
+.scroll__card_text .italic__text {
+    text-transform: uppercase;
+}
 
 .card__img {
     width: 260px;
